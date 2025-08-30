@@ -1,0 +1,39 @@
+[project]
+name = "archweb"
+version = "0.1.0"
+description = "Archlinux website code"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "bencode-py==4.0.0",
+    "bleach==6.0.0",
+    "django==5.1.10",
+    "django-countries==7.6.1",
+    "django-csp==4.0",
+    "django-extensions==4.1",
+    "django-prometheus==2.3.1",
+    "feedparser==6.0.11",
+    "ipy==1.1",
+    "jsmin==3.0.1",
+    "markdown==3.3.7",
+    "parse==1.20.2",
+    "pgpdump==1.5",
+    "ptpython==2.0.4",
+    "requests==2.32.4",
+    "sqlparse==0.5.0",
+    "xtarfile==0.2.1",
+    "zstandard==0.23.0",
+]
+
+[dependency-groups]
+dev = [
+    "flake8>=7.3.0",
+    "pytest>=8.4.1",
+    "pytest-cov>=6.2.1",
+    "pytest-django>=4.11.1",
+]
+prod = [
+    "pyasyncore==1.0.4",
+    "pyinotify==0.9.6",
+    "pymemcache==3.5.0",
+]
