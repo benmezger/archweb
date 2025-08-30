@@ -12,7 +12,7 @@ jobs:
     - name: Set up Python 3.13
       uses: actions/setup-python@v5
       with:
-        python-version-file: ".python-version"
+        python-version: "3.13.0"
     - name: Install uv
       id: setup-uv
       uses: astral-sh/setup-uv@v6
